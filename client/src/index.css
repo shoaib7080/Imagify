@@ -1,1 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Outfit:wght@100..900&family=Poppins&display=swap");
+
 @import "tailwindcss";
+
+* {
+  font-family: Outfit, Montserrat, Poppins, Open Sans, sans-serif;
+}
+
+.placeholder-color {
+  color: #e0e0e0;
+  font-weight: 300;
+}
