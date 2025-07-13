@@ -1,10 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { assets, testimonialsData } from "../assets/assets";
 
 const Testimonials = () => {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center my-20 py-12">
+      <motion.div
+        initial={{ opacity: 0.2, y: 100 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="flex flex-col items-center justify-center my-20 py-12"
+      >
         <h1 className="text-3xl sm:text-4xl font-semibold max-w-[300px] sm:max-w-[590px] mx-auto mt-10 text-center">
           What our <span className="text-blue-600">clients</span> say
         </h1>
@@ -41,7 +48,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
