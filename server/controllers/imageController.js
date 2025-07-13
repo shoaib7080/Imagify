@@ -1,6 +1,5 @@
 import axios from "axios";
 import FormData from "form-data";
-import { form } from "motion/react-client";
 import userModel from "../models/userModel.js";
 
 export const generateImage = async (req, res) => {
